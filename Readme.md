@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Anya Denisova](https://up.htmlacademy.ru/htmlcss/22/user/826045).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Перейро](https://up.htmlacademy.ru/htmlcss/22/user/336863).
 
 ---
 
