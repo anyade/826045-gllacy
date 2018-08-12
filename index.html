@@ -23,52 +23,52 @@
           <li><a href="#">О Компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li><a class="header-button search-btn">Поиск</a></li>
-          <li><a class="header-button login-btn">Вход</a></li>
-          <li><a class="header-button cart-btn">Пусто</a></li>
+          <li><a class="header-button search-btn" href="#">Поиск</a></li>
+          <li><a class="header-button login-btn" href="#">Вход</a></li>
+          <li><a class="header-button cart-btn" href="#">Пусто</a></li>
         </ul>
       </nav>
-      <div class="header-contacts">
-        <p>С 10 до 20, ежедневно<br>
-        <span class="header-phone-number">8 812 450-25-25</span></p>
-      </div>
+      <p class="header-contacts">
+        С 10 до 20, ежедневно<br>
+        <span class="header-phone-number">8 812 450-25-25</span>
+      </p>
     </header>
     <main class="container">
       <h1 class="visually-hidden">Магазин Gllacy Shop</h1>
       <section class="gallery-slider">
         <h2 class="visually-hidden">Фотогалерея</h2>
-        <div class="slider-list">
+        <div class="slide-list">
           <div class="slider-item">
-            <img src="img/slider1.png" width="650" height="575" alt="Крем-брюле и малиновый пломбир">
+            <img src="img/slide1.png" width="650" height="575" alt="Крем-брюле и малиновый пломбир">
             <p class="slider-description">Крем-брюле и пломбир с малиновым джемом</p>
           </div>
           <div class="slider-item">
-            <img src="img/slider2.png" width="650" height="575" alt="Шоколадное и лимонное мороженое">
+            <img src="img/slide2.png" width="650" height="575" alt="Шоколадное и лимонное мороженое">
             <p class="slider-description">Шоколадный пломбир и лимонный сорбет</p>
           </div>
           <div class="slider-item">
-            <img src="img/slider3.png" width="650" height="575" alt="Пломбир с помадкой и клубничное">
+            <img src="img/slide3.png" width="650" height="575" alt="Пломбир с помадкой и клубничное">
             <p class="slider-description">Пломбир с помадкой и клубничный сорбет</p>
           </div>
         </div>
         <nav class="slider-navigation">
           <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
+            <li><a class="nav-btn" href="#">1</a></li>
+            <li><a class="nav-btn" href="#">2</a></li>
+            <li><a class="nav-btn" href="#">3</a></li>
           </ul>
         </nav>
-        <a class="button slider-button">Давайте оба!</a>
+        <a class="button slider-button" href="#">Давайте оба!</a>
       </section>
       <section class="banners">
         <h2 class="visually-hidden">Подарки при покупке</h2>
         <ul class="banner-list">
-          <li class="banner-item item-1">
+          <li class="banner-item banner-item-1">
             <h3 class="banner-title">Малинка даром!</h3>
             <p class="banner-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
             <a class="button" href="#">Хочу варенье!</a>
           </li>
-          <li class="banner-item item-2">
+          <li class="banner-item banner-item-2">
             <h3 class="banner-title">Шоколадки даром!</h3>
             <p class="banner-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной посыпки совершенно бесплатно.</p>
             <a class="button" href="#">Хочу шоколадки!</a>
@@ -79,24 +79,28 @@
         <h2 class="visually-hidden">Хиты продаж</h2>
         <ul class="top-sales-list">
           <li class="top-sales-item">
-            <img src="img/orangejam.png" width="267" height="267" alt="Мороженое с апельсиновым джемом и цитрусовой стружкой">
-            <h3 class="product-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-            <p class="product-price">310₽<span class="weight">/кг</span></p>
+            <h3><a class="top-sales-item-name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
+            <p class="top-sales-item-img"><a href="#"><img src="img/orangejam.png" width="267" height="267" alt="Мороженое с апельсиновым джемом и цитрусовой стружкой"></a></p>
+            <b>310₽<span class="weight">/кг</span></b>
+            <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="top-sales-item">
-            <img src="img/coffeechoco.png" width="267" height="267" alt="Мороженое кофейное с шоколадом">
-            <h3 class="product-name">Сливочно-кофейное с кусочками шоколада</h3>
-            <p class="product-price">380₽<span class="weight">/кг</span></p>
+            <h3><a class="top-sales-item-name" href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
+            <p class="top-sales-item-img"><a href="#"><img src="img/coffeechoco.png" width="267" height="267" alt="Мороженое кофейное с шоколадом"></a></p>
+            <b>380₽<span class="weight">/кг</span></b>
+            <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="top-sales-item">
-            <img src="img/strawwhitechoco.png" width="267" height="267" alt="Мороженое клубничное с белым шоколадом">
-            <h3 class="product-name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
-            <p class="product-price">355₽<span class="weight">/кг</span></p>
+            <h3><a class="top-sales-item-name">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+            <p class="top-sales-item-img"><a href="#"><img src="img/strawwhitechoco.png" width="267" height="267" alt="Мороженое клубничное с белым шоколадом"></a></p>
+            <b>355₽<span class="weight">/кг</span></b>
+            <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="top-sales-item">
-            <img src="img/crembrcaramel.png" width="267" height="267" alt="Мороженое крем-брюле с карамелью">
-            <h3 class="product-name">Сливочное крем-брюле с карамельной подливкой</h3>
-            <p class="product-price">415₽<span class="weight">/кг</span></p>
+            <h3><a class="top-sales-item-name" href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
+            <p class="top-sales-item-img"><a href="#"><img src="img/crembrcaramel.png" width="267" height="267" alt="Мороженое крем-брюле с карамелью"></a></p>
+            <b>415₽<span class="weight">/кг</span></b>
+            <a class="button" href="#">Быстрый просмотр</a>
           </li>
         </ul>
       </section>
@@ -124,7 +128,7 @@
       </section>
       <section class="subscribe">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не сать всякой ненужной ерунды. Честно =)</p>
+        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <button type="submit">Отправить</button>
       </section>
       <section class="map">
@@ -142,22 +146,24 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="footer-social">
+      <section class="footer-social">
+        <h2 class="visually-hidden">Наши страницы в социальных сетях</h2>
         <ul>
           <li><a class="social-button" href="#">Twitter</a></li>
           <li><a class="social-button" href="#">Instagram</a></li>
           <li><a class="social-button" href="#">Facebook</a></li>
           <li><a class="social-button" href="#">Вконтакте</a></li>
         </ul>
-      </div>
-      <div class="footer-supplier-relations">
+      </section>
+      <section class="footer-supplier-relations">
+        <h2 class="visually-hidden">Информация для поставщиков</h2>
         <ul>
           <li><a class="for-suppliers general-info" href="#">Для поставщиков</a></li>
           <li><a class="for-suppliers" href="#">О производстве</a></li>
           <li><a class="for-suppliers" href="#">Наши документы</a></li>
           <li><a class="for-suppliers" href="#">Экологические стандарты</a></li>
         </ul>
-      </div>
+      </section>
       <p class="footer-copyright">
         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logohtml.png" width="108" height="38" alt="Логотип HTML Academy"></a>
         Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
