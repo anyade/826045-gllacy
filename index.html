@@ -8,6 +8,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <img src="img/logo.png" width="155" height="60" alt="Логотип магазина Gllacy Shop">
+        <!-- картинка должна лежать в ссылке -->
         <ul class="site-navigation">
           <li>
             <a href="#">Каталог</a>
@@ -23,12 +24,17 @@
           <li><a href="#">О Компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li><a class="header-button search-btn" href="#">Поиск</a></li>
-          <li><a class="header-button login-btn" href="#">Вход</a></li>
+          <li><a class="header-button search-btn" href="#">Поиск</a>
+          <!-- выпадушка поиска -->
+          </li>
+          <li><a class="header-button login-btn" href="#">Вход</a>
+          <!-- выпадушка формы входа -->
+          </li>
           <li><a class="header-button cart-btn" href="#">Пусто</a></li>
         </ul>
       </nav>
       <p class="header-contacts">
+        <!-- Время в отдельный тег, телефон ссылкой a:telto -->
         С 10 до 20, ежедневно<br>
         <span class="header-phone-number">8 812 450-25-25</span>
       </p>
@@ -36,8 +42,8 @@
     <main class="container">
       <h1 class="visually-hidden">Магазин Gllacy Shop</h1>
       <section class="gallery-slider">
-        <h2 class="visually-hidden">Фотогалерея</h2>
         <div class="slide-list">
+          <!-- эта секция тяжелая, подробнее ее будем делать позже. пока что поубирай все этим Img. Это будут фоны + В каждом slider-item имеется ссылка-кнопка -->
           <div class="slider-item">
             <img src="img/slide1.png" width="650" height="575" alt="Крем-брюле и малиновый пломбир">
             <p class="slider-description">Крем-брюле и пломбир с малиновым джемом</p>
@@ -53,17 +59,21 @@
         </div>
         <nav class="slider-navigation">
           <ul>
+            <!-- в каждом Li не ссылка , в инпут + лейбл -->
             <li><a class="nav-btn" href="#">1</a></li>
             <li><a class="nav-btn" href="#">2</a></li>
             <li><a class="nav-btn" href="#">3</a></li>
           </ul>
         </nav>
+        
+        <!-- кнопка у каждого слайдая своя -->
         <a class="button slider-button" href="#">Давайте оба!</a>
       </section>
       <section class="banners">
         <h2 class="visually-hidden">Подарки при покупке</h2>
         <ul class="banner-list">
           <li class="banner-item banner-item-1">
+            <!-- ...-item-1, ..-item-2 плохая практика. называй сущностями ..-item--chockolate\malina -->
             <h3 class="banner-title">Малинка даром!</h3>
             <p class="banner-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
             <a class="button" href="#">Хочу варенье!</a>
@@ -79,11 +89,15 @@
         <h2 class="visually-hidden">Хиты продаж</h2>
         <ul class="top-sales-list">
           <li class="top-sales-item">
+            <!-- не h3 и внутри ссылка, а пока просто ссылка. УБери поверх h3 -->
             <h3><a class="top-sales-item-name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
-            <p class="top-sales-item-img"><a href="#"><img src="img/orangejam.png" width="267" height="267" alt="Мороженое с апельсиновым джемом и цитрусовой стружкой"></a></p>
+            <!-- обвертка top-sales-item-img и ссылка - не нужны тут. я удалил -->
+            <img src="img/orangejam.png" width="267" height="267" alt="Мороженое с апельсиновым джемом и цитрусовой стружкой">
             <b>310₽<span class="weight">/кг</span></b>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
+          
+          <!-- по аналогии -->
           <li class="top-sales-item">
             <h3><a class="top-sales-item-name" href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
             <p class="top-sales-item-img"><a href="#"><img src="img/coffeechoco.png" width="267" height="267" alt="Мороженое кофейное с шоколадом"></a></p>
@@ -122,6 +136,8 @@
           </li>
         </ul>
       </section>
+      
+      <!-- Общий родитель -->
       <section class="blog-news">
         <h2 class="blog-news-title">Новое в нашем блоге</h2>
         <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
@@ -129,8 +145,11 @@
       <section class="subscribe">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+        <!-- Инпут потеряла -->
         <button type="submit">Отправить</button>
       </section>
+      <!-- конец общего родителя -->
+      
       <section class="map">
         <h2 class="visually-hidden">Контактная информация</h2>
         <div class="contacts">
@@ -170,17 +189,21 @@
       </p>
     </footer>
     <!--Всплывающие окна-->
+    
     <section class="modal modal-login">
       <h2 class="visually-hidden">Форма входа</h2>
       <!--Здесь будет форма-->
+      <!-- где инпуты ? -->
       <a class="button" href="#">Войти</a>
       <a href="#">Забыли пароль?</a>
       <a href="#">Новая регистрация</a>
     </section>
+    
     <section class="modal modal-search">
       <h2 class="visually-hidden">Форма поиска</h2>
       <!--Здесь будет форма-->
     </section>
+    
     <section class="madal modal-feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <p>Мы обязательно вам ответим!</p>
