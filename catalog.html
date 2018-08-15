@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="header-logo" href="index.html"><img src="img/logo.png" width="155" height="60" alt="Логотип магазина Gllacy Shop"></a>
+        <a class="header-logo" href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Gllacy Shop"></a>
         <ul class="site-navigation">
           <li>
             <a class="site-navigation-current" href="#">Каталог</a>
@@ -107,29 +107,29 @@
           <div class="fat-filter">
             <p class="label">Жирность:</p>
             <p class="fat-filter-radio">
-              <label for="zero-fat">0%</label>
               <input type="radio" name="zero-fat" id="zero-fat" value="0%">
-              <label for="less10-fat">до 10%</label>
+              <label for="zero-fat">0%</label>
               <input type="radio" name="less10-fat" id="less10-fat" value="less10%" checked>
-              <label for="less30-fat">до 30%</label>
+              <label for="less10-fat">до 10%</label>
               <input type="radio" name="less30-fat" id="less30-fat" value="less30%">
-              <label for="more30-fat">выше 30%</label>
+              <label for="less30-fat">до 30%</label>
               <input type="radio" name="more30-fat" id="more30-fat" value="more30%">
+              <label for="more30-fat">выше 30%</label>
             </p>
           </div>
           <div class="toppings-filter">
             <p class="label">Наполнители:</p>
             <p class="toppings-filter-checkbox">
-              <label for="choco-topping">шоколадные</label>
               <input type="checkbox" name="choco-topping" id="choco-topping" value="choco" checked>
-              <label for="sugar-topping">сахарные присыпки</label>
+              <label for="choco-topping">шоколадные</label>
               <input type="checkbox" name="sugar-topping" id="sugar-topping" value="sugar" checked>
-              <label for="fruit-topping">фрукты</label>
+              <label for="sugar-topping">сахарные присыпки</label>
               <input type="checkbox" name="fruit-topping" id="fruit-topping" value="fruit">
-              <label for="syrop-topping">сиропы</label>
+              <label for="fruit-topping">фрукты</label>
               <input type="checkbox" name="syrop-topping" id="syrop-topping" value="syrop">
-              <label for="jam-topping">джемы</label>
+              <label for="syrop-topping">сиропы</label>
               <input type="checkbox" name="jam-topping" id="jam-topping" value="jam">
+              <label for="jam-topping">джемы</label>
             </p>
           </div>
           <input type="submit" value="Применить">
@@ -151,7 +151,7 @@
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
-            <a class="catalog-item-name">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            <a class="catalog-item-name" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
             <img src="img/strawwhitechoco.png" width="267" height="267" alt="Мороженое клубничное с белым шоколадом">
             <b>355₽<span class="weight">/кг</span></b>
             <a class="button" href="#">Быстрый просмотр</a>
@@ -212,6 +212,7 @@
           </li>
         </ul>
         <ul class="pagination-list">
+          <li class="pagination-item pagination-item-disabled"><a href="#">&lt;</a></li>
           <li class="pagination-item paginator-item-current"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
@@ -241,7 +242,7 @@
         </ul>
       </section>
       <p class="footer-copyright">
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logohtml.png" width="108" height="38" alt="Логотип HTML Academy"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logohtml.svg" width="108" height="38" alt="Логотип HTML Academy"></a>
         Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
       </p>
     </footer>
