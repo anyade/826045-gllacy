@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин Gllacy Shop</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="main-page">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="header-logo"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Gllacy Shop"></a>
@@ -25,7 +28,7 @@
         <ul class="user-navigation" aria-label="Навигация пользователя">
           <li>
             <a class="header-button search-btn" href="#">Поиск</a>
-            <section class="modal modal-search">
+            <section class="modal-header modal-search">
               <h2 class="visually-hidden">Форма поиска</h2>
               <form class="form search-form" action="https://echo.htmlacademy.ru" method="post" name="search">
                 <label class="visually-hidden" for="searchrequest">Что ищем?</label>
@@ -35,7 +38,7 @@
           </li>
           <li>
             <a class="header-button login-btn" href="#">Вход</a>
-            <section class="modal modal-login">
+            <section class="modal-header modal-login">
               <h2 class="visually-hidden">Форма входа</h2>
               <form class="form login-form" action="https://echo.htmlacademy.ru" method="post" name="login">
                 <label class="visually-hidden" for="email">Электронная почта</label>
@@ -56,7 +59,7 @@
         </ul>
       </nav>
       <p class="header-contacts" aria-label="Контактный телефон">
-        <span class="working-hours" aria-label="Часы работы">С 10 до 20, ежедневно</span>
+        <span aria-label="Часы работы">С 10 до 20, ежедневно</span>
         <a class="header-phone-number" href="tel:88124502525" aria-label="Позвоните нам">8 812 450-25-25</a>
       </p>
     </header>
@@ -65,15 +68,15 @@
       <section class="gallery-slider">
         <h2 class="visually-hidden">Слайдер с изображениями мороженого</h2>
         <div class="slide-list">
-          <div class="slider-item">
+          <div class="slider-item crembr-rasp">
             <p class="slider-description" aria-label="описание товаров">Крем-брюле и пломбир с малиновым джемом</p>
             <a class="button slider-button" href="#" aria-label="добавить 2 товара в корзину">Давайте оба!</a>
           </div>
-          <div class="slider-item">
+          <div class="slider-item choco-lemon">
             <p class="slider-description" aria-label="описание товаров">Шоколадный пломбир и лимонный сорбет</p>
             <a class="button slider-button" href="#" aria-label="добавить 2 товара в корзину">Давайте оба!</a>
           </div>
-          <div class="slider-item">
+          <div class="slider-item fond-straw">
             <p class="slider-description" aria-label="описание товаров">Пломбир с помадкой и клубничный сорбет</p>
             <a class="button slider-button" href="#" aria-label="добавить 2 товара в корзину">Давайте оба!</a>
           </div>
@@ -82,7 +85,7 @@
           <ul>
             <li class="nav-btn">
               <label class="visually-hidden" for="slide1">Крем-брюле и пломбир с малиновым джемом</label>
-              <input type="radio" name="slide1" id="slide1">
+              <input type="radio" name="slide1" id="slide1" checked>
             </li>
             <li class="nav-btn">
               <label class="visually-hidden" for="slide2">Шоколадный пломбир и лимонный сорбет</label>
@@ -101,12 +104,12 @@
           <li class="banner-item banner-item-raspberry">
             <h3 class="banner-title">Малинка даром!</h3>
             <p class="banner-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <a class="button" href="#" aria-label="Выбрать 2 кг фруктового мороженого">Хочу варенье!</a>
+            <a class="button banner-buttom" href="#" aria-label="Выбрать 2 кг фруктового мороженого">Хочу варенье!</a>
           </li>
           <li class="banner-item banner-item-chocolate">
             <h3 class="banner-title">Шоколадки даром!</h3>
             <p class="banner-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной посыпки совершенно бесплатно.</p>
-            <a class="button" href="#" aria-label="Выбрать 2 кг пломбира">Хочу шоколадки!</a>
+            <a class="button banner-buttom" href="#" aria-label="Выбрать 2 кг пломбира">Хочу шоколадки!</a>
           </li>
         </ul>
       </section>
@@ -169,7 +172,7 @@
           <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post" name="new-subscribe">
             <label class="visually-hidden" for="new-subs-email">Электронная почта</label>
             <input type="email" name="new-subs-email" id="new-subs-email" placeholder="Электронная почта" autocomplete="on">
-            <button class="button" type="submit" aria-label="Подписаться на рассылку">Отправить</button>
+            <button class="button subscribe-button" type="submit" aria-label="Подписаться на рассылку">Отправить</button>
           </form>
         </section>
       </div>
@@ -181,10 +184,10 @@
             <span class="main-contacts">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
           </p>
           <p>Для заказов по телефону:<br>
-            <a class="main-contacts" href="tel:88124502525">8 812 450-25-25</a><br>
-            (с 10 до 20 ежедневно)
+            <a class="main-phone-number" href="tel:88124502525">8 812 450-25-25</a>
+            <span class="working-hours">(с 10 до 20 ежедневно)</span>
           </p>
-          <a class="button" href="#">Форма обратной связи</a>
+          <a class="button modal-open-button" href="#">Форма обратной связи</a>
         </div>
       </section>
     </main>
@@ -208,12 +211,12 @@
         </ul>
       </section>
       <p class="footer-copyright" aria-label="Авторские права">
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logohtml.svg" width="108" height="38" alt="Логотип HTML Academy"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logohtml.svg" width="108" height="38" alt="Логотип HTML Academy"></a><br>
         Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
       </p>
     </footer>
     <!--Всплывающее окно-->
-    <section class="madal modal-feedback">
+    <section class="modal modal-feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form class="form form-feedback" action="https://echo.htmlacademy.ru" method="post" name="feedback">
         <p>Мы обязательно вам ответим!</p>

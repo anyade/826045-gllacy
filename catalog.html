@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Сливочное мороженое Gllacy</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="header-logo" href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Gllacy Shop"></a>
@@ -25,7 +28,7 @@
         <ul class="user-navigation" aria-label="Навигация пользователя">
           <li>
             <a class="header-button search-btn" href="#">Поиск</a>
-            <section class="modal modal-search">
+            <section class="modal-header modal-search">
               <h2 class="visually-hidden">Форма поиска</h2>
               <form class="form search-form" action="https://echo.htmlacademy.ru" method="get" name="search">
                 <label class="visually-hidden" for="searchrequest">Что ищем?</label>
@@ -35,7 +38,7 @@
           </li>
           <li>
             <a class="header-button login-btn" href="#">Вход</a>
-            <section class="modal modal-login">
+            <section class="modal-header modal-login">
               <h2 class="visually-hidden">Форма входа</h2>
               <form class="form login-form" action="https://echo.htmlacademy.ru" method="post" name="login">
                 <label class="visually-hidden" for="email">Электронная почта</label>
@@ -52,7 +55,7 @@
           </li>
           <li>
             <a class="header-button cart-btn cart-btn-active" href="#" aria-label="Корзина с товарами">2 товара</a>
-            <section class="modal modal-cart">
+            <section class="modal-header modal-cart">
               <h2 class="visually-hidden">Корзина с выбранными товарами</h2>
               <form class="cart-form" action="https://echo.htmlacademy.ru" method="post" name="order">
                 <table class="cart-list" aria-label="Список товаров, добавленных в корзину">
@@ -109,10 +112,11 @@
               <option value="fat">по жирности</option>
             </select> 
           </fieldset>
-          <fieldset>
-            <legend>Цена:</legend>
-            <label class="visually-hidden" for="price-range">Диапазон цен</label>
-            <input type="range" name="price-range" id="price-range" min="0" max="700" step="100">
+          <fieldset class="price-filter">
+            <legend>Цена: 100 руб. - 500 руб.</legend>
+            <p><label class="visually-hidden" for="price-range">Диапазон цен</label>
+                <input type="range" name="price-range" id="price-range" min="0" max="500" step="100">
+            </p>
           </fieldset>
           <fieldset class="fat-filter">
             <legend>Жирность:</legend>
