@@ -33,6 +33,21 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+label.visually-hidden:focus,
+label.visually-hidden:active {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .inner-page {
   background-color: #849d8f;
 }
@@ -1159,7 +1174,7 @@ a.catalog-item-name:active .underline-decoration {
   margin: 0;
   padding: 0;
   width: 31px;
-  height: 36px;
+  height: 38px;
   display: inline-block;
   vertical-align: top;
   background-image: url("../img/ruble.svg");
